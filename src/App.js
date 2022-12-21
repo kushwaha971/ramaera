@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Agri from "./components/landingPages/agri/Agri";
+import Ecommerce from "./components/landingPages/ecommerce/Ecommerce";
+import Fmcg from "./components/landingPages/FMCG/Fmcg";
+import Footer from "./components/landingPages/footer/Footer";
+import Heading from "./components/landingPages/heading/Heading";
+import HeroPage from "./components/landingPages/heroPage/HeroPage";
+import Hotel from "./components/landingPages/hotel/Hotel";
+import Packing from "./components/landingPages/packing/Packing";
+import Technology from "./components/landingPages/technology/Technology";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <HeroPage/>
+     <Heading/>
+     <Technology/>
+     <Hotel/>
+     <Packing/>
+     <Fmcg/>
+     <Agri/>
+     <Ecommerce/>
+     <Footer/>
+    </>
   );
 }
 
